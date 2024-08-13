@@ -62,3 +62,43 @@ function duplicar<T>(valor: T){
 const numeroDuplicado:number = duplicar(10);
 
 const textoDuplicado:string = duplicar("hola");
+
+//interfaces
+
+interface Persona{
+    nombre: string;
+    edad: number;
+    direccion?:Direccion; // ? significa que es opcional
+}
+
+interface Direccion{
+    calle: string;
+    numero: number;
+    localidad: string;
+}
+
+const persona:Persona = {
+    nombre: "Martin",
+    edad: 25,
+    direccion:{
+        calle: "calle falsa",
+        numero: 123,
+        localidad: "Springfield"
+    }
+}
+
+
+interface Animal {
+    nombre: string;
+    tipo: string;
+}
+
+interface Pajaro extends Animal{
+    colorPlumaje: string;
+}
+
+const canario:Pajaro = {
+    nombre: "Piolin",
+    tipo: "canario",
+    colorPlumaje: "amarillo"
+}
