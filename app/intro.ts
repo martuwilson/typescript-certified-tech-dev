@@ -1,3 +1,5 @@
+import { Persona } from "../interfaces/persona";
+
 let saludo = "saludo";
 
 let nombre: string = "Martin";
@@ -65,7 +67,7 @@ const textoDuplicado:string = duplicar("hola");
 
 //interfaces
 
-interface Persona{
+/* interface Persona{
     nombre: string;
     edad: number;
     direccion?:Direccion; // ? significa que es opcional
@@ -75,7 +77,7 @@ interface Direccion{
     calle: string;
     numero: number;
     localidad: string;
-}
+} */
 
 const persona:Persona = {
     nombre: "Martin",
